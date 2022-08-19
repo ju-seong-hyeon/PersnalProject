@@ -8,11 +8,6 @@ import java.util.List;
 
 @Repository
 public class DBMemberRepository implements MemberRepository{
-    private final MemberRepository memberRepository;
-
-    public DBMemberRepository(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
 
     @PersistenceContext
     EntityManager em;
